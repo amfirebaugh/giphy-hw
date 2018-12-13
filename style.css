@@ -1,0 +1,21 @@
+#bootstrap-overrides {
+    background: black;
+    color: #9B9ECE;
+}
+
+h2, p {
+    padding: 5px;
+}
+
+#allieBtn {
+    margin-left: 5px;
+    margin-bottom: 10px;
+    background: #ACADBC;
+    color: black;
+}
+
+#gif-div {
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+}
