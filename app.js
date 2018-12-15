@@ -12,7 +12,7 @@ $(document).ready(function() {
         var emotion = $(this).attr("data-cat");
         console.log(this); // working, it logs whichever button I click
 
-        var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + emotion + "&limit=10&api_key=zwfvqM9uxcXhfw5oi3ErBI9OGNYb9OmZ";
+        var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + emotion + "&limit=10&api_key=zwfvqM9uxcXhfw5oi3ErBI9OGNYb9OmZ";
 
         // API key :: zwfvqM9uxcXhfw5oi3ErBI9OGNYb9OmZ
 
