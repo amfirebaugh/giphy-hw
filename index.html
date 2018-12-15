@@ -16,29 +16,40 @@
         <div class="row">
             <div class="col-md-6">
                 <h2>Welcome to Giphy Fun!</h2>
+                <h5>Click on any button to display 10 gifs. Then, click on any gif to start/stop playing them at any time. You can also use the search bar to the right to add buttons that will display any gifs you'd like! Try it for yourself!</h5>
+            </div>    
+        
+            <!-- new button section -->
+            <div class="col-md-6" id="newBtns">
+                <h3>Add your own buttons!</h3>
+                <form>
+                    <div class="form-row">
+                        <div class="col">
+                            <input name="searchBar" type="text" class="form-control" id="gif-search" placeholder="gif search">
+                        </div>
+                        <div class="col">
+                            <button type="button" class="btn" id="submit">Submit</button>
+                        </div>
+                    </div>
+                </form>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-8">
-                <p>Click on any button to display 10 gifs. Then, click on any gif to start/stop playing them at any time. You can also use the text box to add buttons that will display gifs of other categories! Try it for yourself!</p>
-            </div>
+
         </div>
     </div>
 
     <!-- button row -->
-    <div class="container" >
-            <div class="row">
-                <div class="col-md-12" id="button-row">
-                </div>
-            </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12" id="button-row"></div>
+        </div>
     </div>
-
-    <!-- gifs row -->
+    
+    <!-- gifs container -->
     <div class="container" >
-            <div class="row">
-                <div class="col-md-12" id="gif-row">
-                </div>
+        <div class="row">
+            <div class="col-md-12" id="gif-row">
             </div>
+        </div>
     </div>
     
 

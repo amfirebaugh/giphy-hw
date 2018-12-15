@@ -1,21 +1,48 @@
 #bootstrap-overrides {
     background: black;
     color: #9B9ECE;
+    padding-top: 10px;
 }
 
-h2, p {
+h5 {
+    font-size: 20px;
+    font-weight: 200;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+h2, h3 {
     padding: 5px;
 }
 
-#allieBtn {
+.allieBtn {
     margin-left: 5px;
     margin-bottom: 10px;
     background: #ACADBC;
     color: black;
 }
 
+#newBtns {
+    padding-bottom: 20px;
+}
+
+#submit {
+    margin-left: 5px;
+    margin-bottom: 10px;
+    color: black;
+    background: #6665DD;
+}
+
+h3 {
+    color: #6665DD;
+}
+
 #gif-div {
     float: left;
     margin-left: 5px;
     margin-right: 5px;
+}
+
+p {
+    margin-top: 20px;
 }
