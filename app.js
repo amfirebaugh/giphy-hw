@@ -10,7 +10,7 @@ $(document).ready(function() {
         `);
     }
 
-    $(".allieBtn").on("click", function() {
+    $("#button-row").on("click", ".allieBtn", function() {
         var emotion = $(this).attr("data-cat");
         console.log(this); // working, it logs whichever button I click
 
@@ -45,23 +45,23 @@ $(document).ready(function() {
                 emotionDiv.append(emotionImg);
                 $("#gif-row").prepend(emotionDiv);
             }
-
-            $("#submit").on("click", function() {
-                var gifSearch = $("input").val().trim();
-                topics2.push(gifSearch);
-                topics3 = topics.concat(topics2);
-
-                console.log(topics3);
-                console.log(topics3.length);
-
-                $("#button-row").empty();
-                for (var i = 0; i < topics3.length; i++) {
-                    $("#button-row").append(`
-                    <button type="button" class="btn allieBtn" data-cat="${topics3[i]}">${topics3[i]}</button>
-                    `);
-                }
-            });
         });
+    });
+
+    $("#submit").on("click", function() {
+        var gifSearch = $("input").val().trim();
+        topics2.push(gifSearch);
+        topics3 = topics.concat(topics2);
+
+        console.log(topics3);
+        console.log(topics3.length);
+
+        $("#button-row").empty();
+        for (var i = 0; i < topics3.length; i++) {
+            $("#button-row").append(`
+            <button type="button" class="btn allieBtn" data-cat="${topics3[i]}">${topics3[i]}</button>
+            `);
+        }
     });
 
     // Note to self: NEEDED to pass "gif-row" because it was hard-coded into the HTML, and it the code wasn't finding my gif class because it wasn't generated yet.
