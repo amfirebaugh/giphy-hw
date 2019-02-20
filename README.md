@@ -1,5 +1,17 @@
-Giphy Fun!
+# Giphy Fun!
 
-This page will generate some buttons that when clicked call the Giphy API to populate 10 gifs of that category. When populated, the static image is loaded, and they can be clicked to start and stop playing the gifs. When any button is clicked, the old gifs clear and the new gifs appear. The search bar allows users to add their own custom buttons to the page (locally) which will function just as the other buttons do, calling the Giphy API, and populating the gif images with the ability to start and stop playing the gifs.
+This is a simple application using the Giphy API and AJAX calls so the client/user can generate, start, and stop gifs of any category.
 
-This was homework assignment 6 of the University of Richmond Coding Bootcamp, fall 2018.
+[I want to play with gifs!](https://amfirebaugh.github.io/giphy-hw/)
+
+## How it Works
+
+On page load the client/user will see some buttons automatically generated for them to interact with. If they click these buttons, gifs of those categories appear on the page, but are static images. The user must click on the images for the gifs to start/stop playing. In addition, the user may add their own buttons via the input field and submit button. Then their own new button will appear, just like the ones generated on page load, and they can now click it to view gifs of the category they added.
+
+### Technologies
+
+HTML, CSS, Bootstrap, jQuery, Giphy API
+
+### Future Development
+
+The design of this page could be improved upon, especially utilizing Bootstrap in better ways. Additional CSS could be added to the gifs once they are populated as well. Additional usage of the Giphy API, as well as calling other API's could make this a more interactive application as well.
