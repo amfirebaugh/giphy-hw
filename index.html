@@ -1,61 +1,76 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <meta charset="utf-8" />
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <title>Giphy Fun</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-    
-</head>
-<body id="bootstrap-overrides">
+  </head>
+  <body id="bootstrap-overrides">
     <!-- Top welcome section -->
     <div class="container" id="welcome">
-        <div class="row">
-            <div class="col-md-6">
-                <h2>Welcome to Giphy Fun!</h2>
-                <h5>Click on any button to display 10 gifs. Then, click on any gif to start/stop playing them at any time. You can also use the search bar to the right to add buttons that will display any gifs you'd like! Try it for yourself!</h5>
-            </div>    
-        
-            <!-- new button section -->
-            <div class="col-md-6" id="newBtns">
-                <h3>Add your own buttons!</h3>
-                <form>
-                    <div class="form-row">
-                        <div class="col">
-                            <input name="searchBar" type="text" class="form-control" id="gif-search" placeholder="gif search">
-                        </div>
-                        <div class="col">
-                            <button type="button" class="btn" id="submit">Submit</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Welcome to Giphy Fun!</h2>
+          <h5>
+            Click on any button to display 10 gifs. Then, click on any gif to
+            start/stop playing them at any time. You can also use the search bar
+            to the right to add buttons that will display any gifs you'd like!
+            Try it for yourself!
+          </h5>
         </div>
+
+        <!-- new button section -->
+        <div class="col-md-6" id="newBtns">
+          <h3>Add your own buttons!</h3>
+          <form>
+            <div class="form-row">
+              <div class="col">
+                <input
+                  name="searchBar"
+                  type="text"
+                  class="form-control"
+                  id="gif-search"
+                  placeholder="gif search"
+                />
+              </div>
+              <div class="col">
+                <button type="button" class="btn" id="submit">Submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
 
     <!-- button row -->
     <div class="container">
-        <div class="row">
-            <div class="col-md-12" id="button-row"></div>
-        </div>
+      <div class="row">
+        <div class="col-md-12" id="button-row"></div>
+      </div>
     </div>
-    
+
     <!-- gifs container -->
-    <div class="container" >
-        <div class="row">
-            <div class="col-md-12" id="gif-row">
-            </div>
-        </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12" id="gif-row"></div>
+      </div>
     </div>
-    
 
     <!-- JQuery -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+    ></script>
     <!-- Javascript -->
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
