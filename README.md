@@ -12,6 +12,8 @@ On page load the client/user will see some buttons automatically generated for t
 
 HTML, CSS, Bootstrap, jQuery, Giphy API
 
+![screen shot of Giphy Fun](./giphy_hw.JPG)
+
 ### Future Development
 
 The design of this page could be improved upon, especially utilizing Bootstrap in better ways. Additional CSS could be added to the gifs once they are populated as well. Additional usage of the Giphy API, as well as calling other API's could make this a more interactive application as well.
